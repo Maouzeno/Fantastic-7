@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huỳnh Văn Khang</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #2e8b57;
+        }
+
+        header {
+            background-image: url('nature-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1, h2, h5 {
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .btn-success {
+            background-color: #32cd32;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.05);
+            background-color: #228b22;
+        }
+
+        .img-fluid {
+            border: 2px solid #32cd32;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        footer {
+            background-color: #228b22;
+        }
+
+        #top-logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #32cd32;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        #top-logo:hover {
+            transform: scale(1.1);
+        }
+
+        #top-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            #top-logo {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo cố định ở góc trên bên trái -->
+    <div id="top-logo">
+        <img src="logo.png" alt="Logo Nhóm">
+    </div>
+
+    <!-- Header với Logo và Menu -->
+    <header class="bg-success text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" fill="#228B22"/>
+                        <path d="M50 10 Q30 30 50 50 Q70 30 50 10" fill="#32CD32"/>
+                        <path d="M50 50 Q30 70 50 90 Q70 70 50 50" fill="#32CD32"/>
+                        <circle cx="50" cy="50" r="5" fill="#FFD700"/>
+                    </svg>
+                </div>
+                <div class="col-md-10">
+                    <h1>Fantastic Seven</h1>
+                    <p></p>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="main_page.html">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="main_page.html#members">Thành Viên</a></li>
+                        <li class="nav-item"><a class="nav-link" href="main_page.html#documents">Tài Liệu</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Phần Chi Tiết Thành Viên -->
+    <section class="container my-5">
+        <h2 class="text-center text-success">Chi Tiết Thành Viên: Huỳnh Văn Khang</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="member1.jpg" alt="Nguyễn Văn A" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+            </div>
+            <div class="col-md-8">
+                <h4>Thông Tin Cá Nhân</h4>
+                <p><strong>Tên:</strong> Huỳnh Văn Khang</p>
+                <p><strong>Tuổi:</strong> 18</p>
+                <p><strong>Ngành Học:</strong> CNTT</p>
+                <p><strong>Vai Trò:</strong> Trưởng nhóm
